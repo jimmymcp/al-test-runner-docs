@@ -41,11 +41,23 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "articles/keyboard-shortcuts.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/keyboard-shortcuts.html",
+          "hash": "ukEQy5scZoF08VrKw819WiSI99h2bGCE4r9BeNweaJU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "articles/running-tests.md",
       "output": {
         ".html": {
           "relative_path": "articles/running-tests.html",
-          "hash": "zYT8XBT/uC1zMLXpxjoM5D1nejaKW+OuIpYBZx23xUU="
+          "hash": "KukoWKInfdz1ka6chjLfEdmWaCLe8f3lIzMon1bBs2k="
         }
       },
       "is_incremental": false,
@@ -70,6 +82,61 @@
         ".html": {
           "relative_path": "articles/toc.html",
           "hash": "5w2UAMZKQRXKCTwFQMJ4Vsnpatqi1IpmUXAF39NQlFE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/20220613191101.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/20220613191101.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/20220613191311.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/20220613191311.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/20220613191553.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/20220613191553.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/20220613222038.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/20220613222038.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/20220613222211.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/20220613222211.png"
         }
       },
       "is_incremental": false,
@@ -128,7 +195,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 6,
+          "total_file_count": 7,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
