@@ -24,21 +24,21 @@ Actions are also added at the top of a test codeunit file to run or debug all th
 
 ![](../images/20220613191311.png)
 
-# Keyboard Shortcuts
-You can also use the following [keyboard shortcuts](keyboard-shortcuts.md) to run or debug tests. Keyboard shortcuts can be configured.
+# Configuration
+The first time that you run some tests for a project AL Test Runner will ask you for some settings.
 
-Command | Shortcut
--- | --
-Run the current test (the last test declared above the cursor) | ```Ctrl + Alt + T```
-Debug the current test | ```Ctrl + Alt + D```
-Run all tests | ```Ctrl + Alt + Shift + T``` or ```Ctrl + ; A```
+If you have more than one **launch configuration** in the launch.json file in the app which contains your tests then you will be prompted to select the correct configuration to run tests against. If you have only one configuration (where request = launch) then that will be used.
+
+If you are using UserPassword authentication in the Docker container then you will be prompted to enter the **credentials** to authenticate with the container.
+
+If you have more than one **company** in the container then you will be prompted to select which company you want to run the tests against.
+
+All of these settings are saved in a *config.json* file in the *.altestrunner* folder in the test app project. [See here for more info about the configuring the extension](config.md).
 
 # Results
 AL Test Runner creates a new terminal called al-test-runner to run commands from the [BCContainerHelper](https://www.powershellgallery.com/packages/BcContainerHelper) PowerShell module.
 
-The tests are run in your Docker container and the results downloaded to an xml file.
-
-The results are stored in the .altestrunner/Results folder, the test results are shown in an Output window and the status of each test updated in the Test Explorer window.
+The tests are run in your Docker container and the results downloaded to an xml file. The results are stored in the .altestrunner/Results folder, the test results are shown in an Output window and the status of each test updated in the Test Explorer window.
 
 ![](../images/20220613222038.png)  
 
@@ -47,3 +47,12 @@ If tests have failed a link to the declaration of the failing test will also be 
 ![](../images/20220613222211.png)  
 
 The line of the test which led to the error will be highlighted with a red wavy underline. You can change the CSS decoration for the failing line with the _Failing Line Decoration_ extension setting.
+
+# Keyboard Shortcuts
+You can also use the following [keyboard shortcuts](keyboard-shortcuts.md) to run or debug tests. Keyboard shortcuts can be configured.
+
+Command | Shortcut
+-- | --
+Run the current test (the last test declared above the cursor) | ```Ctrl + Alt + T```
+Debug the current test | ```Ctrl + Alt + D```
+Run all tests | ```Ctrl + Alt + Shift + T``` or ```Ctrl + ; A```
