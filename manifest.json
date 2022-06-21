@@ -17,6 +17,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "articles/config.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/config.html",
+          "hash": "q7TTenm67GguJdCdCYMIRdtEN4YHNHhwokBcJB234A0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "articles/debugging-tests.md",
       "output": {
         ".html": {
@@ -33,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "sFWtdMLtL+k7VmU0GlJIIs2NnRc4MBsFrCw72yWZtWA="
+          "hash": "idGj0qFisqcPvhvUiqa3FGcUV/VjNIQBhaZrITLOYyE="
         }
       },
       "is_incremental": false,
@@ -45,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/keyboard-shortcuts.html",
-          "hash": "ukEQy5scZoF08VrKw819WiSI99h2bGCE4r9BeNweaJU="
+          "hash": "KbpROaXLu/svYaAnYBW3pCuMxpCARj2rJsK/tfUhsBg="
         }
       },
       "is_incremental": false,
@@ -57,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/running-tests.html",
-          "hash": "KukoWKInfdz1ka6chjLfEdmWaCLe8f3lIzMon1bBs2k="
+          "hash": "atl8OAllbqgSzDyUfeXP0aTbsZ4gQbmJ/a0WCQlOoko="
         }
       },
       "is_incremental": false,
@@ -76,12 +88,24 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "articles/test-runner-service.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/test-runner-service.html",
+          "hash": "XsbIBDmPrhQhhcn7UpAjXnVinbr4tVoR/6SIYj6Vm3E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "articles/toc.yml",
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "5w2UAMZKQRXKCTwFQMJ4Vsnpatqi1IpmUXAF39NQlFE="
+          "hash": "dz8+Xo+YcWETiKGZbd2SKmbHTWmXlDo33S5yUHOaFbA="
         }
       },
       "is_incremental": false,
@@ -143,6 +167,17 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "images/20220621132643.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/20220621132643.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "log_codes": [
         "InvalidFileLink"
       ],
@@ -195,7 +230,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 7,
+          "total_file_count": 9,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
