@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title> </title>
+    <title>Test Runner Service </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content=" ">
+    <meta name="title" content="Test Runner Service ">
     <meta name="generator" content="docfx 2.59.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,7 +67,19 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
+<h1 id="test-runner-service">Test Runner Service</h1>
 
+<p>Test Runner Service is a Business Central app which needs to be installed into your container for AL Test Runner to be able to debug tests and use the <a href="show-table-data.html">Show Table Data</a> function.</p>
+<p>For a local container you should be able to install the app with the <code>Install Test Runner Service</code> command in Visual Studio Code.</p>
+<p>For remote containers you will need to download the app from GitHub at <a href="https://github.com/jimmymcp/test-runner-service/raw/master/James%20Pearson_Test%20Runner%20Service.app">https://github.com/jimmymcp/test-runner-service/raw/master/James%20Pearson_Test%20Runner%20Service.app</a>.</p>
+<h3 id="testrunnerserviceurl">testRunnerServiceUrl</h3>
+<p>Once you have installed the app you need to set the URL that the REST endpoint can be reached at.</p>
+<p>Open the config.json file in the .altestrunner folder (or use the <code>Open Config File</code> command from the command palette). Set the correct URL for the service in the <strong>testRunnerServiceUrl</strong> key.</p>
+<p>Note that the URL must include both the company name and the tenant (if your container was creating in multi-tenant mode). As example of the URL is:</p>
+<pre><code>http://containername:7048/BC/ODataV4/TestRunner?company=My%20Company&amp;tenant=default
+</code></pre>
+<p>Replace <code>containername</code> with the name of your container. For a remote container (hosted on a different machine) this URL will be different and you will need to ensure that the OData services port is accessible.</p>
+<p>For more details on configuring Business Central for OData services <a href="https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/configure-server-instance#ODataServices">see here</a>.</p>
 </article>
           </div>
           

@@ -41,3 +41,13 @@
 a.button {
     color: black;
 }
+
+.buttonBanner {
+    text-align: center;
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+}
+
+.videoBanner {
+    text-align: center;
+}

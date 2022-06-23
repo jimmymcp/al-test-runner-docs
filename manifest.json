@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/debugging-tests.html",
-          "hash": "HBAOJ7gazlo8GHqklAuD91234v5RP0Sp0ntkS5Zg8p0="
+          "hash": "YaoOHcfsV6W9DIT6305HHAjLkh/wZWropvnHGaCxZ/E="
         }
       },
       "is_incremental": false,
@@ -77,6 +77,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "articles/show-table-data.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/show-table-data.html",
+          "hash": "cxXJX1s5w8UK6PYB8dqFcvCf582QNP0sn5OUHJibrp4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "articles/test-coverage.md",
       "output": {
         ".html": {
@@ -93,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/test-runner-service.html",
-          "hash": "XsbIBDmPrhQhhcn7UpAjXnVinbr4tVoR/6SIYj6Vm3E="
+          "hash": "E1BOF3kHZ5pVDqXpRq4KgORKAZ2IFFzNGVS5Zj8v600="
         }
       },
       "is_incremental": false,
@@ -105,7 +117,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "dz8+Xo+YcWETiKGZbd2SKmbHTWmXlDo33S5yUHOaFbA="
+          "hash": "2E8l3j38fNPJRlnhm1BGphU+LOJkD7mIcHj1z479baQ="
         }
       },
       "is_incremental": false,
@@ -178,6 +190,17 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "images/20220622173320.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/20220622173320.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "log_codes": [
         "InvalidFileLink"
       ],
@@ -186,7 +209,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "oDeSOc36RwFAUir2mBQSIExW9aL000Rup/lJyVwmL20="
+          "hash": "rHnem+Brgb5WUz77kGPdb5j5Lxw5NQRI+KB7SdYlMvY="
         }
       },
       "is_incremental": false,
@@ -230,7 +253,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 9,
+          "total_file_count": 10,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

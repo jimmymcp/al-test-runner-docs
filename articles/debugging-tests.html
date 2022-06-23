@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title> </title>
+    <title>Debugging Tests </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content=" ">
+    <meta name="title" content="Debugging Tests ">
     <meta name="generator" content="docfx 2.59.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,7 +67,46 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
+<h1 id="debugging-tests">Debugging Tests</h1>
 
+<p>You can debug your tests using the Debug Test code lens, the test icon in the gutter, with the Debug Test command from the command palette or with the <code>Ctrl + Alt + D</code> keyboard shortcut.</p>
+<p><img src="../images/20220622173320.png" alt=""></p>
+<h2 id="launch-configuration">Launch Configuration</h2>
+<p>Before you can debug tests you need to have a launch configuration, with request = attach, to attach the debugger to your server.</p>
+<p>It will look something like this. In my example I am attaching to a local docker container called <strong>bc</strong>.</p>
+<pre><code>{
+    &quot;name&quot;: &quot;attach bc&quot;,
+    &quot;type&quot;: &quot;al&quot;,
+    &quot;request&quot;: &quot;attach&quot;,
+    &quot;environmentType&quot;: &quot;OnPrem&quot;,
+    &quot;server&quot;: &quot;http://bc&quot;,
+    &quot;serverInstance&quot;: &quot;BC&quot;,
+    &quot;authentication&quot;: &quot;UserPassword&quot;,
+    &quot;breakOnError&quot;: true,
+    &quot;breakOnRecordWrite&quot;: false,
+    &quot;enableSqlInformationDebugger&quot;: true,
+    &quot;enableLongRunningSqlStatements&quot;: true,
+    &quot;longRunningSqlStatementsThreshold&quot;: 500,
+    &quot;numberOfSqlStatements&quot;: 10,
+    &quot;breakOnNext&quot;: &quot;WebServiceClient&quot;,
+    &quot;tenant&quot;: &quot;default&quot;
+}
+</code></pre>
+<p>When you run debug a test AL Test Runner which check whether a debugger is already attached and if not will attempt to attach to the server specified in the first launch configuration (of request = attach) in launch.json for the project.</p>
+<h2 id="test-runner-service">Test Runner Service</h2>
+<p>Your Docker container must also have the <a href="test-runner-service.html"><strong>Test Runner Service</strong></a> app installed. This app provides a REST web service which AL Test Runner uses to run tests.</p>
+<p>For a local container you should be able to install the app with the <code>Install Test Runner Service</code> command in Visual Studio Code.</p>
+<p>For remote containers you will need to download the app from GitHub at <a href="https://github.com/jimmymcp/test-runner-service/raw/master/James%20Pearson_Test%20Runner%20Service.app">https://github.com/jimmymcp/test-runner-service/raw/master/James%20Pearson_Test%20Runner%20Service.app</a>.</p>
+<h3 id="testrunnerserviceurl">testRunnerServiceUrl</h3>
+<p>Once you have installed the app you need to set the URL that the REST endpoint can be reached at.</p>
+<p>Open the config.json file in the .altestrunner folder (or use the <code>Open Config File</code> command from the command palette). Set the correct URL for the service in the <strong>testRunnerServiceUrl</strong> key.</p>
+<p>Note that the URL must include both the company name and the tenant (if your container was creating in multi-tenant mode). As example of the URL is:</p>
+<pre><code>http://containername:7048/BC/ODataV4/TestRunner?company=My%20Company&amp;tenant=default
+</code></pre>
+<p>Replace <code>containername</code> with the name of your container. For a remote container (hosted on a different machine) this URL will be different and you will need to ensure that the OData services port is accessible.</p>
+<p>For more details on configuring Business Central for OData services <a href="https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/configure-server-instance#ODataServices">see here</a>.</p>
+<h1 id="video">Video</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OYige7OLmu4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 </article>
           </div>
           
