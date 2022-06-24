@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title> </title>
+    <title>Code Coverage </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content=" ">
+    <meta name="title" content="Code Coverage ">
     <meta name="generator" content="docfx 2.59.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,7 +67,39 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
+<h1 id="code-coverage">Code Coverage</h1>
 
+<p>AL Test Runner can calculate code coverage statistics when you run your tests. Summarise the number of lines that have been hit by your test code per object and see a coverage percentage above each method right in the editor.</p>
+<h2 id="summary">Summary</h2>
+<p>With code coverage enabled a summary of the coverage of the objects which have been hit by your tests will be displayed when you run tests.</p>
+<p>The code coverage details are downloaded in a json file and stored in the .altestrunner folder of your test project.</p>
+<p>The path to the source file is also shown so that you can <code>Alt + Click</code> to open the source file in the editor.</p>
+<p><img src="../images/20220624141325.png" alt=""></p>
+<h2 id="toggle-code-coverage">Toggle Code Coverage</h2>
+<p>With code coverage stats downloaded you can toggle highlighting the lines which were hit.</p>
+<p>Code coverage statistics are kept for:</p>
+<ul>
+<li>the <strong>previous</strong> test run</li>
+<li>the last time <strong>all tests</strong> in the project were run</li>
+</ul>
+<p>You can toggle the code highlighting between &quot;Off&quot;, &quot;Previous&quot; and &quot;All&quot;. The highlighting mode is displayed in the status bar. Toggle the display:</p>
+<ul>
+<li>by clicking on the Code Coverage mode in the status bar</li>
+<li>using the <code>Toggle Code Coverage</code> command from the command palette (<code>Ctrl + Alt + C</code>)</li>
+<li>clicking on the code coverage code lens (see below)</li>
+</ul>
+<p><img src="../images/toggle-code-coverage.gif" alt=""></p>
+<h3 id="code-coverage-code-lens">Code Coverage Code Lens</h3>
+<p>A code lens is displayed above each method with the % coverage the last time <strong>all tests</strong> were run. Clicking on this code lens will toggle the display between Off and All.</p>
+<h1 id="setup">Setup</h1>
+<h2 id="test-runner-service">Test Runner Service</h2>
+<p>Make sure that you have the <a href="test-runner-service.html">Test Runner Service</a> app installed and your testRunnerServiceUrl entered in the AL Test Runner config file.</p>
+<h2 id="extension-settings">Extension Settings</h2>
+<p>Next, enable the <code>Enable Code Coverage</code> setting in the extension settings.
+<img src="../images/20220624084735.png" alt=""></p>
+<p>Optioally, you can also enter a regex expression in the <code>Code Coverage Exclude Files</code> setting. Any files with paths which are matched by this expression will not be included in the code coverage statistics.</p>
+<p><img src="../images/20220624084920.png" alt=""></p>
+<p>In this example, I am excluding any objects which have the &quot;tests&quot; in their path. This will prevent my test library methods and the tests themselves from showing in the code coverage summary.</p>
 </article>
           </div>
           

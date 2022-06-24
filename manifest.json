@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/code-coverage.html",
-          "hash": "hrppeF6is0gaLOon6+7JFFftRv3QwIrvU3zP70xDoc0="
+          "hash": "CMKfhyjELpSjMvefIcyoI/CCpzJ0KYdYAa8cLjCs1eE="
         }
       },
       "is_incremental": false,
@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/debugging-tests.html",
-          "hash": "YaoOHcfsV6W9DIT6305HHAjLkh/wZWropvnHGaCxZ/E="
+          "hash": "sL1decEALW9mOb1eWUN8KQLWQogSzel2rZ6NvCsE5mk="
         }
       },
       "is_incremental": false,
@@ -57,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/keyboard-shortcuts.html",
-          "hash": "KbpROaXLu/svYaAnYBW3pCuMxpCARj2rJsK/tfUhsBg="
+          "hash": "e5VmuwXkoQNWF5hV7oO7W+Z740Xhign59N55QqeDIr8="
         }
       },
       "is_incremental": false,
@@ -105,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/test-runner-service.html",
-          "hash": "E1BOF3kHZ5pVDqXpRq4KgORKAZ2IFFzNGVS5Zj8v600="
+          "hash": "YEjWIaUVGU6mueVL/zb5+B6Iz2DwP1P1qPR0bUCMvMM="
         }
       },
       "is_incremental": false,
@@ -195,6 +195,50 @@
       "output": {
         "resource": {
           "relative_path": "images/20220622173320.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/20220624084735.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/20220624084735.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/20220624084920.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/20220624084920.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/20220624141325.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/20220624141325.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/toggle-code-coverage.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/toggle-code-coverage.gif"
         }
       },
       "is_incremental": false,
