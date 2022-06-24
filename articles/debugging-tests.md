@@ -43,7 +43,7 @@ Once you have installed the app you need to set the URL that the REST endpoint c
 
 Open the config.json file in the .altestrunner folder (or use the ```Open Config File``` command from the command palette). Set the correct URL for the service in the **testRunnerServiceUrl** key.
 
-Note that the URL must include both the company name and the tenant (if your container was creating in multi-tenant mode). As example of the URL is:
+Note that the URL must include both the company name and the tenant (if your container was creating in multi-tenant mode). An example of the URL is:
 
 ```
 http://containername:7048/BC/ODataV4/TestRunner?company=My%20Company&tenant=default
