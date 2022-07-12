@@ -1,7 +1,7 @@
 # Show Table Data
 Sometimes it is useful while debugging a test to see the record(s) that have been created in a table.
 
-![](..\images\show-table-data.gif)
+![](../images/show-table-data.gif)
 
 AL Test Runner adds a context menu item to ```Show Table Data```. Place the cursor somewhere in the name of Record variable that you want to view then select ```Show Table Data``` from the right click menu.
 
