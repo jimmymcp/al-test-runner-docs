@@ -76,15 +76,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "articles/show-table-data.md",
       "output": {
         ".html": {
           "relative_path": "articles/show-table-data.html",
-          "hash": "KL/468XxwLcubzY/j8pnZ82fX3cKaHDCMGxttOrsURg="
+          "hash": "ztRKHX7KylOLGd4lru9GKjR75DdDWYWbZMnPHRe/hS0="
         }
       },
       "is_incremental": false,
