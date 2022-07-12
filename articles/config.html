@@ -8,7 +8,7 @@
     <title>Extension Settings </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Extension Settings ">
-    <meta name="generator" content="docfx 2.59.2.0">
+    <meta name="generator" content="docfx 2.59.3.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -69,6 +69,47 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="extension-settings">Extension Settings</h1>
 
+<h2 id="test-decoration">Test Decoration</h2>
+<h3 id="decorate-test-methods">Decorate Test Methods</h3>
+<p>Determines whether the names of test methods are decorated in the editor. Colors are defined in RGBA format and can be edited in the settings.json file.</p>
+<h3 id="passing-tests-color">Passing Tests Color</h3>
+<p>The color to highlight tests which are passing in the editor.</p>
+<h3 id="failing-tests-color">Failing Tests Color</h3>
+<p>The color to highlight tests which are failing in the editor.</p>
+<h3 id="untested-tests-color">Untested Tests Color</h3>
+<p>The color to highlight tests with no results in the editor.</p>
+<h3 id="highlight-failing-line">Highlight Failing Line</h3>
+<p>Determines whether the line of a failing test which led to an error is highlighted in the editor (according to the Failing Line Decoration setting).</p>
+<h3 id="failing-line-decoration">Failing Line Decoration</h3>
+<p>The CSS to decorate the line of a failing test which led to the error.</p>
+<h3 id="test-output-location">Test Output Location</h3>
+<p>Determines where the test results are output to. Choose between <code>Output</code> (the AL Test Runner output channel) or <code>Editor</code> (results are displayed in a new editor window).</p>
+<h3 id="code-lens">Code Lens</h3>
+<p>Determines whether <code>Run Test</code> and <code>Debug Test</code> Code Lens actions are displayed above test methods.</p>
+<h2 id="publishing-options">Publishing Options</h2>
+<p>The following settings control if and how the test app is published to your container before tests are run.</p>
+<h3 id="publish-before-tests">Publish Before Tests</h3>
+<p>Select from <code>Publish</code>, <code>Rapid application publishing</code> or <code>None</code>. The corresponding command from the AL Language extension will be run on the test project before the test(s) are executed.</p>
+<p>This allows you to publish your test app to your container before running tests automatically.</p>
+<h3 id="enable-publishing-from-powershell">Enable Publishing from PowerShell</h3>
+<p>(<strong>Experimental</strong>) Rather than publishing through the AL Language extension commands, enable this setting to publish from PowerShell with the bccontianerhelper module. This option gives AL Test Runner better control over how the test run behaves if the test app fails to compile or publish.</p>
+<h3 id="publish-timeout">Publish Timeout</h3>
+<p>The time (in milliseconds) to wait before assuming that the test app failed to compile and/or publish into the container.</p>
+<h2 id="test-folder-name">Test Folder Name</h2>
+<p>When publishing apps from PowerShell this setting must be set. Enter the name of the folder in the workspace which contains your test project.</p>
+<h3 id="prepost-test-command">Pre/Post Test Command</h3>
+<p>A PowerShell command to execute in the terminal before or after the tests have been run. See the commands which are available in the ALTestRunner module with <code>Get-Command -Module ALTestRunner</code></p>
+<h2 id="code-coverage">Code Coverage</h2>
+<p>The following settings are used by the <a href="code-coverage.html">code coverage</a> features of AL Test Runner.</p>
+<h3 id="enable-code-coverage">Enable Code Coverage</h3>
+<p>Determines whether code coverage statistics are calculated and displayed after running tests.</p>
+<h3 id="code-coverage-exclude-files">Code Coverage Exclude Files</h3>
+<p>This is a regular expression to define files in your project which should be excluded from the code coverage statistics. Typically this would be used to exclude files in your test project.</p>
+<p>Any files whose paths match this setting will be excluded from code coverage.</p>
+<p>For example, if your test codeunits are contained in a folder named &quot;tests&quot; then set this setting to <code>tests</code>.</p>
+<h3 id="code-coverage-path">Code Coverage Path</h3>
+<p>Typically this setting can be left blank. AL Test Runner will automatically discover the codeCoverage.json file.</p>
+<p>The purpose of this setting is to hold the relative path from your project file to the codeCoverage.json file which is downloaded when calculating code coverage.</p>
 <h1 id="config-file">Config File</h1>
 </article>
           </div>

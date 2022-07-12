@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title> </title>
+    <title>Show Table Data </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content=" ">
-    <meta name="generator" content="docfx 2.59.2.0">
+    <meta name="title" content="Show Table Data ">
+    <meta name="generator" content="docfx 2.59.3.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -67,7 +67,14 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
+<h1 id="show-table-data">Show Table Data</h1>
 
+<p>Sometimes it is useful while debugging a test to see the record(s) that have been created in a table.</p>
+<p><img src="..%5Cimages%5Cshow-table-data.gif" alt=""></p>
+<p>AL Test Runner adds a context menu item to <code>Show Table Data</code>. Place the cursor somewhere in the name of Record variable that you want to view then select <code>Show Table Data</code> from the right click menu.</p>
+<p>The extension will call find the variable declaration and call the Test Runner Service extension to find the id of this table. Your default browser will then be opened to the table.</p>
+<h2 id="setup">Setup</h2>
+<p>The <a href="test-runner-service.html">Test Runner Service</a> extension must be installed and configured in your container.</p>
 </article>
           </div>
           

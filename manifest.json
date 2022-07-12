@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/code-coverage.html",
-          "hash": "CMKfhyjELpSjMvefIcyoI/CCpzJ0KYdYAa8cLjCs1eE="
+          "hash": "ss3SyQ94iOQ8ipRDrb/8Lz5dPww43GxDgJvkXFGppBM="
         }
       },
       "is_incremental": false,
@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/config.html",
-          "hash": "q7TTenm67GguJdCdCYMIRdtEN4YHNHhwokBcJB234A0="
+          "hash": "iGz8oHRH28dwkhC51oUVztrlYQask64gKV1xiuBap5k="
         }
       },
       "is_incremental": false,
@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/debugging-tests.html",
-          "hash": "sL1decEALW9mOb1eWUN8KQLWQogSzel2rZ6NvCsE5mk="
+          "hash": "ebIvUxeb6KBpBHiMg6x4lYGGZr4X6gC72oEuB87PRN0="
         }
       },
       "is_incremental": false,
@@ -45,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "idGj0qFisqcPvhvUiqa3FGcUV/VjNIQBhaZrITLOYyE="
+          "hash": "1yVTUrveUDmgzcQyAdXpe/8GvhfugiVxUvcu+vJ3NY4="
         }
       },
       "is_incremental": false,
@@ -57,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/keyboard-shortcuts.html",
-          "hash": "e5VmuwXkoQNWF5hV7oO7W+Z740Xhign59N55QqeDIr8="
+          "hash": "Iogvr5QJFfpIzj1iNI0KIAQtbw5uma2ELH60QucHX9k="
         }
       },
       "is_incremental": false,
@@ -69,19 +69,22 @@
       "output": {
         ".html": {
           "relative_path": "articles/running-tests.html",
-          "hash": "atl8OAllbqgSzDyUfeXP0aTbsZ4gQbmJ/a0WCQlOoko="
+          "hash": "j2/sZ6jhmdbLGgFUkwz+F/IILwmuSYp1jWaHf0xEjb8="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "articles/show-table-data.md",
       "output": {
         ".html": {
           "relative_path": "articles/show-table-data.html",
-          "hash": "cxXJX1s5w8UK6PYB8dqFcvCf582QNP0sn5OUHJibrp4="
+          "hash": "KL/468XxwLcubzY/j8pnZ82fX3cKaHDCMGxttOrsURg="
         }
       },
       "is_incremental": false,
@@ -93,7 +96,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/test-coverage.html",
-          "hash": "9zh9xx46WzotKwowddtcBjwrc5NE1Bgckvb88dL/gYY="
+          "hash": "rkhy9rxW2O9y8cxBLCfyHRYODkgjnI6OIV2zo6TZWnA="
         }
       },
       "is_incremental": false,
@@ -105,7 +108,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/test-runner-service.html",
-          "hash": "YEjWIaUVGU6mueVL/zb5+B6Iz2DwP1P1qPR0bUCMvMM="
+          "hash": "YrjnwWNEcKTea2Zq4WeiMQaWa/D9W8p3loTq/I8UgZg="
         }
       },
       "is_incremental": false,
@@ -117,7 +120,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "2E8l3j38fNPJRlnhm1BGphU+LOJkD7mIcHj1z479baQ="
+          "hash": "fBjcQnouv6z0gg0eg+R+uJzJy+8UmR3V0Zz000IRsmE="
         }
       },
       "is_incremental": false,
@@ -235,6 +238,39 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/run-tests-code-lens.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/run-tests-code-lens.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/show-table-data.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/show-table-data.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/show-tests-code-lens.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/show-tests-code-lens.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/toggle-code-coverage.gif",
       "output": {
         "resource": {
@@ -253,7 +289,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "rHnem+Brgb5WUz77kGPdb5j5Lxw5NQRI+KB7SdYlMvY="
+          "hash": "VJCUoWhWeWsg35uShVA3+ktIsH/p2PvaizfzmLBYNBU="
         }
       },
       "is_incremental": false,

@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title> </title>
+    <title>Test Coverage </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content=" ">
-    <meta name="generator" content="docfx 2.59.2.0">
+    <meta name="title" content="Test Coverage ">
+    <meta name="generator" content="docfx 2.59.3.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -67,8 +67,20 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
+<h1 id="test-coverage">Test Coverage</h1>
 
-<p>AL Test Runner can build a map between your tests and the methods which they call in other objects.</p>
+<p>AL Test Runner can build a map between your tests and the methods which they call in other objects. This information can be used</p>
+<h1 id="code-lens">Code Lens</h1>
+<p>For each method a code lens will be displayed with the number of tests which call that method.</p>
+<h2 id="show-tests">Show Tests</h2>
+<p>Use the <code>&quot;Show x Tests&quot;</code> code lens to display the names of the test methods which call this method.</p>
+<p>You can <code>Alt + Click</code> on the file path to jump to the declaration of the test method.</p>
+<p><img src="../images/show-tests-code-lens.gif" alt=""></p>
+<h2 id="run-tests">Run Tests</h2>
+<p>Use the <code>Run x Tests</code> code lens to run the tests which are related to this method. A new test run will be started for the test which are related to this method.</p>
+<p><img src="../images/run-tests-code-lens.gif" alt=""></p>
+<h1 id="updating-the-map">Updating the Map</h1>
+<p>The map is updated when you run a <strong>single</strong> test with code coverage enabled. AL Test Runner will scan the code coverage file to find which objects and methods were hit by your test and store that information in a <em>testCoverage.json</em> file in the .altestrunner folder in your test project.</p>
 </article>
           </div>
           
