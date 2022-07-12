@@ -10,6 +10,8 @@
   href: test-coverage.md
 - name: Test Runner Service
   href: test-runner-service.md
+- name: Show Table Data
+  href: show-table-data.md
 - name: Configuration
   href: config.md
 - name: Keyboard Shortcuts
