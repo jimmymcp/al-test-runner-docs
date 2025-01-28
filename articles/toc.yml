@@ -12,6 +12,8 @@
   href: test-runner-service.md
 - name: Show Table Data
   href: show-table-data.md
+- name: Export Tests to CSV
+  href: export-test-to-csv.md
 - name: Configuration
   href: config.md
 - name: Keyboard Shortcuts
