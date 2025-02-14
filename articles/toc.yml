@@ -14,6 +14,8 @@
   href: show-table-data.md
 - name: Export Tests to CSV
   href: export-test-to-csv.md
+- href: working-with-alpaca.md
+  name: Working with Alpaca Containers
 - name: Configuration
   href: config.md
 - name: Keyboard Shortcuts
