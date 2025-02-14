@@ -129,7 +129,19 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "5xEcmK6iaAAwEngsNojBOvFSCCWVXBXaWWXpgVrx8Cg="
+          "hash": "u072Kf9wVeTx0geFetfBttI2qIuoBOoFW/nm20qDH0g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/working-with-alpaca.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/working-with-alpaca.html",
+          "hash": "M10VGT2vxEqs1n+XzquD3egVySiPnXSXQIgC/k7RoK0="
         }
       },
       "is_incremental": false,
@@ -269,6 +281,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/run-via-url.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/run-via-url.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/show-table-data.gif",
       "output": {
         "resource": {
@@ -353,7 +376,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 11,
+          "total_file_count": 12,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
