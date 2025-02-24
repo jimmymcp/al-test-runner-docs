@@ -89,7 +89,8 @@ on root level</li>
 <h2 id="publishing-from-powershell">Publishing from PowerShell</h2>
 <p>The Publishing from PowerShell setting must be disabled. This setting is only applicable to publishing into a local Docker container.</p>
 <h2 id="debugging">Debugging</h2>
-<p>To allow for test debugging the testRunnerServiceUrl must be set in the AL Test Runner configuration file.</p>
+<p>To allow for test debugging the testRunnerServiceUrl must be set in the AL Test Runner configuration file. The extension will automatically populate a value for this URL.</p>
+<p>If your launch configuration specifies <code>&quot;port&quot;: 443</code> then &quot;soap&quot; or &quot;rest&quot; will be automatically appended to the server instance and leave the port unspecified (this assumes the container is behind a traefik reverse proxy).</p>
 <p>Use the <strong>AL Test Runner: Open Config File</strong> command to open the file. The testRunnerServiceUrl should be in the format:</p>
 <pre><code>https://cosmo-alpaca-enterprise.westeurope.cloudapp.azure.com/%1soap/WS/%2/TestRunner?tenant=%3
 </code></pre>
