@@ -26,7 +26,9 @@ With this setting enabled BCContainerHelper will create a connection to the clie
 The Publishing from PowerShell setting must be disabled. This setting is only applicable to publishing into a local Docker container.
 
 ## Debugging
-To allow for test debugging the testRunnerServiceUrl must be set in the AL Test Runner configuration file.
+To allow for test debugging the testRunnerServiceUrl must be set in the AL Test Runner configuration file. The extension will automatically populate a value for this URL.
+
+If your launch configuration specifies ```"port": 443``` then "soap" or "rest" will be automatically appended to the server instance and leave the port unspecified (this assumes the container is behind a traefik reverse proxy).
 
 Use the **AL Test Runner: Open Config File** command to open the file. The testRunnerServiceUrl should be in the format:
 
